@@ -12,12 +12,12 @@ function calculate() {
   const efficiency = (behaaldeStudiePunten / effectiveStudiePunten) * 100;
 
   // Calculate the tolerantiekrediet
-  const tolerantiekrediet = ((efficiency - 50) + 3 * (totaalStudiePunten - vrijstellingen)) / 60;
+  const tolerantiekrediet = ((efficiency - 50) + 3 * (totaalStudiePunten - behaaldeStudiePunten)) / 10;
 
   // Display the results
   const resultElement = document.getElementById("result");
   resultElement.innerHTML = `
-    Je studie-efficiëntie is ${efficiency.toFixed(2)}%.<br>
-    Je tolerantiekrediet is ${tolerantiekrediet.toFixed(2)}.
+    <p>Efficiëntie: ${efficiency.toFixed(2)}%</p>
+    <p>Tolerantiekrediet: ${tolerantiekrediet.toFixed(2)} studiepunten</p>
   `;
 }
