@@ -4,30 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studie Efficiëntie Calculator met Tolerantiekrediet</title>
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f7f7f7;">
-  <h1 style="color: #333; margin-top: 0;">Studie Efficiëntie Calculator met Tolerantiekrediet</h1>
-  <p style="margin-bottom: 10px;">Deze calculator berekent je studie-efficiëntie en tolerantiekrediet op basis van het aantal behaalde studiepunten, het aantal opgenomen studiepunten, het aantal vrijstellingen en het totaal aantal studiepunten in de opleiding.</p>
-  <form style="display: flex; flex-direction: column;">
-    <label style="margin-bottom: 5px;" for="behaalde_studiepunten">Behaalde studiepunten:</label>
-    <input type="number" id="behaalde_studiepunten" name="behaalde_studiepunten" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+<body>
+  <h1>Studie Efficiëntie Calculator met Tolerantiekrediet</h1>
+  <p>Deze calculator berekent je studie-efficiëntie en tolerantiekrediet op basis van het aantal behaalde studiepunten, het aantal opgenomen studiepunten, het aantal vrijstellingen en het totaal aantal studiepunten in de opleiding.</p>
+  <form>
+    <label for="behaalde_studiepunten">Behaalde studiepunten:</label>
+    <input type="number" id="behaalde_studiepunten" name="behaalde_studiepunten" required>
     <br>
-    <label style="margin-bottom: 5px;" for="opgenomen_studiepunten">Opgenomen studiepunten:</label>
-    <input type="number" id="opgenomen_studiepunten" name="opgenomen_studiepunten" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+    <label for="opgenomen_studiepunten">Opgenomen studiepunten:</label>
+    <input type="number" id="opgenomen_studiepunten" name="opgenomen_studiepunten" required>
     <br>
-    <label style="margin-bottom: 5px;" for="vrijstellingen">Vrijstellingen:</label>
-    <input type="number" id="vrijstellingen" name="vrijstellingen" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+    <label for="vrijstellingen">Vrijstellingen:</label>
+    <input type="number" id="vrijstellingen" name="vrijstellingen" required>
     <br>
-    <label style="margin-bottom: 5px;" for="totaal_studiepunten">Totaal aantal studiepunten opleiding:</label>
-    <input type="number" id="totaal_studiepunten" name="totaal_studiepunten" required style="padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+    <label for="totaal_studiepunten">Totaal aantal studiepunten opleiding:</label>
+    <input type="number" id="totaal_studiepunten" name="totaal_studiepunten" required>
     <br>
     <br>
-    <button type="button" onclick="calculate()" style="margin-top: 10px; padding: 10px 20px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Bereken</button>
+    <button type="button" onclick="calculate()">Bereken</button>
   </form>
   <br>
-  <p id="result" style="border: 1px solid #ccc; border-radius: 4px; padding: 10px; background-color: #fff;"></p>
-  <script>
-    // ... JavaScript code ...
-  </script>
+  <p id="result"></p>
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+    <input type="hidden" name="hosted_button_id" value="LKAQKX773WBRL">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+<script src="/index.js"></script>
 </body>
 </html>
